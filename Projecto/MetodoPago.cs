@@ -1,6 +1,6 @@
 using System;
 
-namespace IPago{
+namespace Pagos{
     
     class Efectivo : IPago{
        

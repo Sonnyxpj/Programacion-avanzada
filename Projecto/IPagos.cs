@@ -1,9 +1,8 @@
 using System;
 
-namespace IPago{
+namespace Pagos{
 
     interface IPago{
-
         void Pago(double Total);
     }
 }

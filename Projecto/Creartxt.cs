@@ -1,18 +1,18 @@
-using System;
+//using System;
 
 
-namespace ConsoleApplication
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+//namespace ConsoleApplication
+//{
+//    class Program
+//    {
+//        static void Main(string[] args)
+//       {
 
-            string fileName = "test.txt";
-            string textToAdd = "Example text in file";
-            using (StreamWriter writer = new StreamWriter(fileName, true)){
-                writer.Write(textToAdd);
-            }
-        }
-    }
-}
+//            string fileName = "test.txt";
+//            string textToAdd = "Example text in file";
+//            using (StreamWriter writer = new StreamWriter(fileName, true)){
+//                writer.Write(textToAdd);
+//            }
+//        }
+//    }
+//}
