@@ -1,6 +1,7 @@
 ﻿using System;
-
-
+//Servicios (mitad)
+//Boletas (falta)
+//Sucursal (casi terminado)
 namespace Vehiculos{
 
     abstract class Vehiculo{
@@ -10,7 +11,6 @@ namespace Vehiculos{
         private string? patente;
         private int anio;
         private int kilometraje;
-        
 
         public Vehiculo(string marca, string modelo, string patente, int anio, int kilometraje){
             this.marca = marca;
