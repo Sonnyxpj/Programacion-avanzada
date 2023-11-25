@@ -9,6 +9,9 @@ namespace Vehiculos{
         public Automovil(string marca, string modelo, string patente, string color, int anio, int kilometraje) : base(marca, modelo, patente, anio, kilometraje){
             this.color = color;
         }
+        public Automovil(string marca, string modelo, string patente, int anio, int kilometraje) : base(marca, modelo, patente, anio, kilometraje){
+            
+        }
         public string? Color{
             get { return color; }
             set { color = value; }

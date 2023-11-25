@@ -1,4 +1,60 @@
-2 interfaces
-sucursal
-servicios
+
+
+excepcion en telefono
 sobrecarga de operadores
+
+
+
+            //Forma de crear el pago
+            //Console.WriteLine("Seleccione un método de pago:");
+            //Console.WriteLine("1. Efectivo");
+            //Console.WriteLine("2. Tarjeta");
+
+            //int opcion = Convert.ToInt32(Console.ReadLine());
+            //IPago Mpago;
+            switch (opcion){
+
+                case 1:
+                    Mpago = new Efectivo();
+                    break;
+                case 2:
+                    Mpago = new Tarjeta();
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida");
+                    Mpago = new Efectivo();
+                    break;
+            }
+            Console.WriteLine("Ingrese el monto a pagar:");
+            double monto = Convert.ToDouble(Console.ReadLine());
+            Mpago.Pago(monto);
+            
+
+/////////
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Ruta del archivo de texto
+        string filePath = "Sucursal.txt";
+
+        // Lee todas las líneas del archivo
+        string[] lines = File.ReadAllLines(filePath);
+
+        // Itera a través de cada línea
+        foreach (string line in lines)
+        {
+            // Divide la línea en partes utilizando un separador (por ejemplo, espacio en blanco)
+            string[] parts = line.Split(",");
+
+            // Itera a través de cada parte e imprímela
+            foreach (string part in parts)
+            {
+                Console.WriteLine(part);
+            }
+        }
+    }
+}

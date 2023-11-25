@@ -1,1 +1,10 @@
-dasfsdfasdfasdfaaaaaaaa
+1,Ajuste de motor = $30.000
+Alineación y balanceo de ruedas
+Cambio de aceite;3
+Cambio de bujías;4
+Cambio de correa de distribución;5
+Cambio de pastillas de freno;6
+Cambio de kit de embreague;7
+Cambio de suspensión y amortiguación;8
+Cambio de filtro de aceite;9
+Reparación de sistema electrónico;10

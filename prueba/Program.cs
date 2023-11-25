@@ -1,59 +1,27 @@
 ﻿using System;
 
-interface IMetodoPago
-{
-    void RealizarPago(decimal monto);
-}
-
-class PagoEnEfectivo : IMetodoPago
-{
-    public void RealizarPago(decimal monto)
-    {
-        Console.WriteLine($"Pago en efectivo por un monto de {monto:C}");
-    }
-}
-
-class PagoConTarjeta : IMetodoPago
-{
-    public void RealizarPago(decimal monto)
-    {
-        Console.WriteLine($"Pago con tarjeta por un monto de {monto:C}");
-    }
-}
-
 class Program
 {
     static void Main()
     {
-        Console.WriteLine("Seleccione un método de pago:");
-        Console.WriteLine("1. Efectivo");
-        Console.WriteLine("2. Tarjeta");
+        // Crear una instancia de la clase Random
+        Random random = new Random();
 
-        int opcion = Convert.ToInt32(Console.ReadLine());
+        // Generar un número entero aleatorio
+        int numeroEntero = random.Next();
 
-        IMetodoPago metodoPago;
+        // Generar un número entero aleatorio en un rango específico (por ejemplo, entre 1 y 100)
+        long numeroEnRango = random.Next(100000000, 999999999);
 
-        switch (opcion)
-        {
-            case 1:
-                metodoPago = new PagoEnEfectivo();
-                break;
+        // Generar un número decimal aleatorio
+        double numeroDecimal = random.NextDouble();
 
-            case 2:
-                metodoPago = new PagoConTarjeta();
-                break;
+        // Imprimir los resultados
+        Console.WriteLine("Número entero aleatorio: " + numeroEntero);
+        Console.WriteLine("Número en rango aleatorio (entre 1 y 100): " + numeroEnRango);
+        //Console.WriteLine("Número decimal aleatorio: " + numeroDecimal);
 
-            default:
-                Console.WriteLine("Opción no válida. Seleccionando pago en efectivo por defecto.");
-                metodoPago = new PagoEnEfectivo();
-                break;
-        }
-
-        Console.WriteLine("Ingrese el monto a pagar:");
-        decimal monto = Convert.ToDecimal(Console.ReadLine());
-
-        metodoPago.RealizarPago(monto);
-
-        Console.ReadLine(); // Para que la consola no se cierre inmediatamente
+        // Esperar a que el usuario presione una tecla antes de cerrar la aplicación
+        Console.ReadKey();
     }
 }

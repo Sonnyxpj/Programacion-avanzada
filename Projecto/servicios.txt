@@ -1,10 +1,10 @@
-Ajuste de motor;
-Alineación y balanceo de ruedas;
-Cambio de aceite;
-Cambio de bujías;
-Cambio de correa de distribución;
-Cambio de pastillas de freno;
-Cambio de kit de embreague;
-Cambio de suspensión y amortiguación;
-Cambio de filtro de aceite;
-Reparación de sistema electrónico;
+Ajuste de motor;50000
+Alineación y balanceo de ruedas;30000
+Cambio de aceite;15000
+Cambio de bujías;10000
+Cambio de correa de distribución;20000
+Cambio de pastillas de freno;15000
+Cambio de kit de embreague;60000
+Cambio de suspensión y amortiguación;50000
+Cambio de filtro de aceite;20000
+Reparación de sistema electrónico;15000

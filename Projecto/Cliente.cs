@@ -3,29 +3,42 @@ using System;
 
 namespace Clientes{
 
-    class Clientes{
-        private string? nombre;
-        private string rut = "xx.xxx.xxx-x";
-        private string correo = "ejemplo@gmail.com";
-        private string telefono = "912345678";
+    class Cliente{
+        private string? nombre = "x";
+        private string rut = "11.111.111-1";
+        private string correo = "nadie@nada.non";
+        private int telefono = 912345678;
         private int edad = 18;
 
-        public Clientes(){
+        public Cliente(){
 
         }
-        public Clientes(string nombre, string rut, string correo, string telefono, int edad){
+        public Cliente(string nombre, string rut, string correo, int telefono, int edad){
             this.nombre = nombre;
             this.rut = rut;
             this.correo = correo;
             this.telefono = telefono;
             this.edad = edad;
         }
-        public Clientes(string nombre, string rut, string telefono, int edad){
+
+        public Cliente(string nombre, string rut, int telefono, int edad){
             this.nombre = nombre;
             this.rut = rut;
             this.telefono = telefono;
             this.edad = edad;
         }
+        public Cliente(String nombre, string rut, string correo, int edad){
+            this.nombre = nombre;
+            this.rut = rut;
+            this.correo = correo;
+            this.edad = edad;
+        }
+        public Cliente(string nombre, string rut, int edad){
+            this.nombre = nombre;
+            this.rut = rut;
+            this.edad = edad;
+        }
+
         public string? Nombre{
             get {return nombre; }
             set {nombre = value; }    
@@ -38,7 +51,7 @@ namespace Clientes{
             get {return correo;}
             set {correo = value;}
         }
-        public string Telefono{
+        public int Telefono{
             get {return telefono; }
             set {telefono = value; }
         }
