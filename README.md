@@ -1,4 +1,4 @@
-# 🔧 Dinobot Entertainment 🔧
+# 🔧 Dinobot's Mechanical Workshop 🔧
 
 Aplicación de consola en **C# (.NET 7)** que simula la atención de clientes en un taller mecánico. El programa registra los datos del cliente y de su vehículo (automóvil, motocicleta o camión), le muestra un menú de servicios con su tiempo estimado y costo, y simula la impresión de la boleta con una barra de carga.
 
